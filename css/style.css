@@ -1,0 +1,829 @@
+/* === Public Header Styles - Prefix: spub- === */
+.spub-header {
+    background-color: #004080;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.spub-header-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spub-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.spub-nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.spub-nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.spub-nav-link:hover {
+    color: #ffcc00;
+}
+
+/* Responsive Nav (Optional Mobile Layout) */
+@media (max-width: 768px) {
+    .spub-nav-list {
+        flex-direction: column;
+        background-color: #004080;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        display: none;
+    }
+
+    .spub-nav-list.spub-show {
+        display: flex;
+    }
+}
+
+/* === Private Header Styles - Prefix: spri- === */
+.spri-header {
+    background-color: #003366;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.spri-header-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spri-logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.spri-nav-list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.spri-nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.spri-nav-link:hover {
+    color: #00e6e6;
+}
+
+/* Responsive layout (optional) */
+@media (max-width: 768px) {
+    .spri-nav-list {
+        flex-direction: column;
+        background-color: #003366;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        display: none;
+    }
+
+    .spri-nav-list.spri-show {
+        display: flex;
+    }
+}
+
+/* === Footer Styles - Prefix: sfoot- === */
+.sfoot-footer {
+    background-color: #f1f1f1;
+    border-top: 1px solid #ddd;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+}
+
+.sfoot-footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sfoot-footer-text {
+    color: #555;
+    margin: 5px 0;
+}
+
+.sfoot-footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.sfoot-footer-link {
+    color: #004080;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sfoot-footer-link:hover {
+    color: #0080ff;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    .sfoot-footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sfoot-footer-links {
+        margin-top: 10px;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* === Global Image Responsiveness === */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* === Index Page Styles - Prefix: sind- === */
+
+/* Carousel Section */
+.sind-carousel-section {
+    background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+    overflow: hidden;
+    padding: 0;
+}
+
+.sind-carousel {
+    display: flex;
+    animation: sind-slide 12s infinite;
+    width: 300%;
+}
+
+.sind-carousel-slide {
+    flex: 1 0 100%;
+}
+
+.sind-carousel-slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Welcome Section */
+.sind-welcome-section {
+    text-align: center;
+    background: linear-gradient(to right, #74ebd5, #9face6);
+    color: #222;
+    padding: 60px 20px;
+}
+
+.sind-welcome-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.sind-welcome-section p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 25px;
+}
+
+.sind-cta-button {
+    background-color: #004080;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.sind-cta-button:hover {
+    background-color: #0066cc;
+}
+
+/* Featured Events */
+.sind-featured-section {
+    padding: 60px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.sind-featured-section h3 {
+    font-size: 2rem;
+    color: #004080;
+}
+
+.sind-event-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.sind-event-card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.sind-event-card:hover {
+    transform: translateY(-10px);
+}
+
+.sind-event-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.sind-event-card h4 {
+    margin: 15px 0 5px;
+    color: #004080;
+}
+
+.sind-event-card p {
+    padding: 0 15px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.sind-view-link {
+    display: inline-block;
+    margin: 10px 0 20px;
+    text-decoration: none;
+    color: #004080;
+    font-weight: bold;
+}
+
+/* About Section */
+.sind-about-section {
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    padding: 60px 20px;
+    text-align: center;
+    color: #333;
+}
+
+.sind-about-section h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.sind-about-section p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+/* Carousel Animation */
+@keyframes sind-slide {
+    0%, 20% { transform: translateX(0); }
+    25%, 45% { transform: translateX(-100%); }
+    50%, 70% { transform: translateX(-200%); }
+    75%, 100% { transform: translateX(0); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .sind-carousel-slide img {
+        height: 250px;
+    }
+
+    .sind-welcome-section h2 {
+        font-size: 2rem;
+    }
+
+    .sind-event-card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sind-event-card {
+        width: 90%;
+    }
+}
+
+/* === Registration Form Styles - Prefix: sreg- === */
+.sreg-main {
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sreg-container {
+    background: white;
+    padding: 40px;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.sreg-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #004080;
+}
+
+.sreg-form-group {
+    margin-bottom: 20px;
+}
+
+.sreg-form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+.sreg-form-group input,
+.sreg-form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.sreg-submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #004080;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.sreg-submit-btn:hover {
+    background-color: #0066cc;
+}
+
+.sreg-login-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.95rem;
+}
+
+.sreg-success {
+    color: green;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.sreg-error {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* === Login Form Styles - Prefix: slog- === */
+.slog-main {
+    background: linear-gradient(to right, #f8f9fa, #dbe4f0);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slog-container {
+    background: white;
+    padding: 40px;
+    max-width: 450px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.slog-title {
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    color: #004080;
+}
+
+.slog-form-group {
+    margin-bottom: 20px;
+}
+
+.slog-form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+.slog-form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.slog-submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #004080;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.slog-submit-btn:hover {
+    background-color: #0066cc;
+}
+
+.slog-register-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.95rem;
+}
+
+.slog-error {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+/* === Enhanced Vibrant Event Page Styles - Prefix: sevt- === */
+.sevt-main {
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: #f5f5f5;
+    padding: 60px 20px;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.sevt-wrapper {
+    max-width: 800px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(12px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.sevt-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #ffffff;
+    text-shadow: 0 0 15px #ff00ff, 0 0 30px #00ffff;
+}
+
+.sevt-banner {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.sevt-details-card {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.sevt-details-card p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #eee;
+}
+
+.sevt-details-card span {
+    font-weight: bold;
+    color: #ffd700;
+}
+
+/* Booking Form */
+.sevt-book-form {
+    text-align: center;
+}
+
+.sevt-book-btn {
+    background: linear-gradient(90deg, #ff0080, #7928ca);
+    border: none;
+    padding: 14px 32px;
+    font-size: 1.1rem;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    text-shadow: 0 0 6px #fff;
+    box-shadow: 0 0 15px #ff00ff;
+    transition: all 0.3s ease;
+}
+
+.sevt-book-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #00ffff;
+}
+
+.sevt-login-reminder {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 25px;
+}
+
+.sevt-login-reminder a {
+    color: #00ffff;
+    text-decoration: underline;
+}
+
+.sevt-error-msg {
+    text-align: center;
+    color: #ff4444;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* === Dashboard Styles - Prefix: sdash- === */
+.sdash-main {
+    padding: 40px 20px;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    min-height: 90vh;
+}
+
+.sdash-container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.sdash-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+.sdash-subtitle {
+    font-size: 1.3rem;
+    color: #333;
+    margin: 20px 0 10px;
+}
+
+.sdash-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.sdash-table th, .sdash-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.sdash-table th {
+    background: #f0f0f0;
+    color: #333;
+}
+
+.sdash-btn {
+    padding: 6px 12px;
+    margin: 0 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.sdash-btn.edit {
+    background-color: #28a745;
+    color: white;
+}
+
+.sdash-btn.delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.sdash-msg {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* === Create Event Form Styles - Prefix: cevt- === */
+.cevt-main {
+    background: linear-gradient(135deg, #1c1b2f, #5f72bd);
+    color: #ffffff;
+    padding: 60px 20px;
+    min-height: 90vh;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.cevt-container {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.cevt-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #ffccff;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #ff00cc, 0 0 20px #00ffff;
+}
+
+.cevt-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cevt-group {
+    margin-bottom: 20px;
+}
+
+.cevt-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #f9f9f9;
+}
+
+.cevt-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+}
+
+.cevt-btn {
+    background: linear-gradient(90deg, #ff00cc, #3333ff);
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #00ffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cevt-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #ff00ff;
+}
+
+
+/* === Event Page === */
+.sevt-main {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #d0d0e6, #94a3c4);
+}
+
+.sevt-heading {
+    text-align: center;
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.sevt-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.sevt-card {
+    padding: 20px;
+    background: linear-gradient(135deg, #d376a0, #d26feb);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.sevt-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.sevt-btn:hover {
+    background: #005fa3;
+}
+
+.sevt-btn.book {
+    background: #00cc66;
+}
+
+.sevt-detail-box {
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #d376a0, #d26feb);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.sevt-msg {
+    text-align: center;
+    margin: 10px auto;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.sevt-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.sevt-msg.success {
+    color: green;
+}
+
+.sevt-msg.warn {
+    color: #cc9900;
+}
+
+.sevt-msg.error {
+    color: red;
+}
