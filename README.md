@@ -42,7 +42,7 @@ This project is designed to run locally via XAMPP. Please see the installation i
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/CodeMaster-01-prog/smart-event-booking.git
+   git clone https://github.com/GirishMysoreRamesh1/smart-event-booking.git
    ```
 
 2. Move the folder to XAMPP's htdocs:
