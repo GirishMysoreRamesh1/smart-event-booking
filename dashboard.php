@@ -26,6 +26,7 @@ $role = $_SESSION['role'];
             $result = $stmt->get_result();
 
             if ($result->num_rows > 0): ?>
+                <div class="sdash-table-wrapper">
                 <table class="sdash-table">
                     <tr>
                         <th>Title</th><th>Date</th><th>Time</th><th>Location</th>
@@ -39,6 +40,7 @@ $role = $_SESSION['role'];
                         </tr>
                     <?php endwhile; ?>
                 </table>
+                </div>
             <?php else: ?>
                 <p class="sdash-msg">You haven’t booked any events yet.</p>
             <?php endif;
@@ -54,6 +56,7 @@ $role = $_SESSION['role'];
             $result = $stmt->get_result();
 
             if ($result->num_rows > 0): ?>
+                <div class="sdash-table-wrapper">
                 <table class="sdash-table">
                     <tr>
                         <th>Title</th><th>Date</th><th>Time</th><th>Actions</th>
@@ -70,6 +73,7 @@ $role = $_SESSION['role'];
                         </tr>
                     <?php endwhile; ?>
                 </table>
+                </div>
             <?php else: ?>
                 <p class="sdash-msg">No events created yet.</p>
             <?php endif;
